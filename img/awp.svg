@@ -7,8 +7,20 @@
 <metadata>
 Created by potrace 1.15, written by Peter Selinger 2001-2017
 </metadata>
+<defs>
+<radialGradient id="gradient-fill">
+<stop offset="0" stop-color="#672bff" />
+<stop offset="0.14285714285714285" stop-color="#5a28d6" />
+<stop offset="0.2857142857142857" stop-color="#4d24af" />
+<stop offset="0.42857142857142855" stop-color="#401f8a" />
+<stop offset="0.5714285714285714" stop-color="#331a66" />
+<stop offset="0.7142857142857142" stop-color="#261544" />
+<stop offset="0.8571428571428571" stop-color="#180e25" />
+<stop offset="1" stop-color="#000000" />
+</radialGradient>
+</defs>
 <g transform="translate(0.000000,300.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
+fill="url(#gradient-fill)" stroke="none">
 <path d="M4258 2988 c-3 -7 -3 -55 0 -105 l5 -93 -167 0 c-141 0 -166 2 -166
 15 0 12 -15 15 -74 15 -53 0 -77 -4 -86 -15 -19 -23 -141 -20 -190 5 -21 11
 -41 24 -45 30 -10 16 -82 12 -89 -5 -7 -18 -121 -22 -131 -4 -5 7 -94 10 -281
