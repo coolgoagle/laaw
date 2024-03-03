@@ -1,0 +1,133 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    cursor: url("img/cursors/cursor16px.png"), url("img/cursors/cursor16px.png"), auto !important;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(62, 62, 111, 1) 35%, rgba(0, 0, 0, 1) 100%);
+    background-size: 150% 150%;
+    background-position: center center;
+    background-attachment: fixed;
+    animation: pulse 5s ease-in-out infinite;
+    color: #e0e0e0;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        background-size: 100% 100%;
+    }
+
+    50% {
+        background-size: 150% 150%;
+    }
+}
+
+*:not(html, body) {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+header {
+    background: transparent;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+article section {
+    margin-bottom: 15px;
+}
+
+article section p {
+    text-align: justify;
+}
+
+/* Typography enhancements */
+p {
+    font-size: 1em;
+    color: #b3b3b3;
+}
+
+/* Links Styling */
+a {
+    color: #4db8ff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #80ccff;
+}
+
+article section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 10px;
+    /* 10px bottom margin to create some space between the image and the paragraph */
+}
+
+/* Hover Effects */
+article section:hover {
+    background-color: #292929;
+    border-left: 4px solid #4db8ff;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 0%, rgba(62, 62, 111, 1) 35%, rgba(0, 0, 0, 1) 100%);;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #2b252c;
+    border-radius: 5px;
+    border: 3px none #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4c4b4b;
+}
